@@ -299,10 +299,11 @@ The goal of Milestone 1 was to create a set of HTML pages providing a mockup of 
 
 Mockups for the following four pages were implemented during M1:
 
-<img width="200px" src="images/landing.png"/>
+<img width="200px" src="images/landingpage.png"/>
 <img width="200px" src="images/profile.png"/>
-<img width="200px" src="images/directory.png"/>
-<img width="200px" src="images/filter.png"/>
+<img width="200px" src="images/lfg-submit.png"/>
+<img width="200px" src="images/lfg.png"/>
+<img width="200px" src="images/BrowseProfile.png"/>
 
 Milestone 1 was implemented as [M1](https://github.com/manoagaming/manoagaming/projects/1)::
 
