@@ -1,6 +1,6 @@
 # Table of contents
 
-* [About Bowfolios](#about-bowfolios)
+* [About Manoa Gaming](#about-manoa-gaming)
 * [Installation](#installation)
 * [Application design](#application-design)
   * [Directory structure](#directory-structure)
@@ -19,15 +19,10 @@
 * [Development history](#development-history)
   * [Milestone 1: Mockup development](#milestone-1-mockup-development)
   * [Milestone 2: Data model development](#milestone-2-data-model-development)
-  * [Milestone 3: Connect UI to data model](#milestone-3-connect-ui-to-data-model)
-  * [Milestone 4: Authentication](#milestone-4-authentication)
-  * [Milestone 5: Administration](#milestone-5-administration)
-* [Walkthrough videos](#walkthrough-videos)
-* [JSDocs](/jsdocs)
 
-# About BowFolios 
+# About Manoa Gaming 
 
-BowFolios is a Meteor application providing portfolios for the University of Hawaii community. When you come to the site, you are greeted by the following landing page:
+Manoa Gaming is a Meteor application where gamers can meet other gamers to join together and play their favorite games for the University of Hawaii community. When you come to the site, you are greeted by the following landing page:
 
 ![](images/landing.png)
 
@@ -35,15 +30,15 @@ Anyone with a UH account can login to BowFolios by clicking on the login button.
  
 ![](images/bowfolios-cas.png)
  
-Once authenticated, you can create a profile that provides a biographical statement and list of interests, plus links to selected social media sites (GitHub, FaceBook, Instagram):
+Once authenticated, you can create a profile that provides a biographical statement and list the games you play, plus links to selected gaming sites to provide your in-game name(ign).
 
 ![](images/profile.png)
   
-After creating a profile, you will be listed on the public directory page:
+After creating a profile, you will be listed on the looking for group page(lfg):
 
 ![](images/directory.png)
 
-BowFolios also provides a filter page, available to those who can login to the system with their UH account. The filter page allows you to display all portfolios with a given interest:
+Manoa Gaming also provides a Profile Browse page, available to those who can login to the system with their UH account. The Profile Browse page allows you to display all profiles with a given interest:
 
 ![](images/filter.png)
 
@@ -51,7 +46,7 @@ BowFolios also provides a filter page, available to those who can login to the s
 
 First, [install Meteor](https://www.meteor.com/install).
 
-Second, [download a copy of BowFolios](https://github.com/bowfolios/bowfolios/archive/master.zip), or clone it using git.
+Second, [download a copy of Manoa Gaming](https://github.com/manoagaming/manoagaming.git), or clone it using git.
   
 Third, cd into the app/ directory and install libraries with:
 
@@ -341,72 +336,6 @@ Milestone 2 consisted of two issues, and progress was managed via the [BowFolio 
 Each issue was implemented in its own branch, and merged into master when completed:
 
 ![](images/m2-branch-graph.png)
-
-## Milestone 3: Connect UI to data model
-
-This milestone started on Feb 2, 2017 and ended on Feb 10, 2017.
-
-The goal of Milestone 3 was to connect the user interface to the underlying data model. This meant that we updated the templates for each page with calls to helper functions, and we created Javascript files for the templates with helper functions. We used the form control templates from [meteor-example-form](https://ics-software-engineering.github.io/meteor-example-form/) to simplify implementation of form processing.
-
-Milestone 3 was implemented as [BowFolio GitHub Milestone M3](https://github.com/bowfolios/bowfolios/milestone/3)::
-
-![](images/m3-milestone.png)
-
-
-Milestone 3 consisted of four issues, and progress was managed via the [BowFolio GitHub Project M3](https://github.com/bowfolios/bowfolios/projects/3):
-
-![](images/m3-project.png)
-
-Each issue was implemented in its own branch, and merged into master when completed:
-
-![](images/m3-branch-graph.png)
-
-## Milestone 4: Authentication
-
-This milestone started on Feb 10, 2017 and ended on Feb 14, 2017.
-
-The goal of Milestone 4 was to set up authentication using the University of Hawaii test CAS system. We used the templates from [meteor-example-uh-cas](http://ics-software-engineering.github.io/meteor-example-uh-cas/) to guide the implementation. Although the example restricts logins to those in a list in the configuration file, BowFolios allows anyone with a UH account to access the system. 
-
-Authentication also implies that users cannot access the profile or filter page associated with another user.
-
-Milestone 4 was implemented as [BowFolio GitHub Milestone M4](https://github.com/bowfolios/bowfolios/milestone/4)::
-
-![](images/m4-milestone.png)
-
-
-Milestone 4 consisted of two issues, and progress was managed via the [BowFolio GitHub Project M4](https://github.com/bowfolios/bowfolios/projects/4):
-
-![](images/m4-project.png)
-
-Each issue was implemented in its own branch, and merged into master when completed:
-
-![](images/m4-branch-graph.png)
-
-## Milestone 5: Administration
-
-This milestone started on Feb 14, 2017 and is ongoing.
-
-[BowFolio GitHub Milestone 5](https://github.com/bowfolios/bowfolios/milestone/5) involves the creation of an administrator role in the system. The administrator can manage the set of defined interests. (Currently, interests are defined in the database file loaded at system startup time.)
-
-This milestone will also include the implementation of Meteor methods and removal of the insecure package. 
-
-We will manage progress on this milestone using [BowFolio GitHub Project M5](https://github.com/bowfolios/bowfolios/projects/5).
-
-# Walkthrough videos
-
-BowFolios is intended as a model of how an ICS 314 project could be organized and executed. Here are some videos to walk through various aspects of the system and development process:
-
-* [BowFolios: User Interface](https://www.youtube.com/watch?v=aZvxRQfQdkE)
-* [BowFolios: Development Process](https://www.youtube.com/watch?v=8pTgFtbcjTc)
-* [BowFolios: Application Structure](https://www.youtube.com/watch?v=_5g5CzZ0Toc)
-* [BowFolios: Authentication and Authorization](https://www.youtube.com/watch?v=AaXShN8cYNY)
-* [BowFolios: Initialization](https://www.youtube.com/watch?v=P3Kigb1gtVo)
-* [BowFolios: Unit Testing](https://www.youtube.com/watch?v=EexZfw1yMJs)
-* [BowFolios: Design Patterns](https://www.youtube.com/watch?v=yP-t44HBCPQ). Maybe watch [this](https://www.youtube.com/watch?v=Z2yjimK_MJU) first.
-
-
-
-
 
 
 
