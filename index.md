@@ -36,8 +36,8 @@ Once authenticated, you can create a profile that provides a biographical statem
   
 After creating a profile, you will be listed on the looking for group page(lfg):
 
-![](images/lfg.png)
 ![](images/lfg-submit.png)
+![](images/lfg.png)
 
 Manoa Gaming also provides a Profile Browse page, available to those who can login to the system with their UH account. The Profile Browse page allows you to display all profiles with a given interest:
 
