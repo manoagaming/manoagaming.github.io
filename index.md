@@ -24,7 +24,7 @@
 
 Manoa Gaming is a Meteor application where gamers can meet other gamers to join together and play their favorite games for the University of Hawaii community. When you come to the site, you are greeted by the following landing page:
 
-![](images/landing.png)
+![](images/landingpage.png)
 
 Anyone with a UH account can login to BowFolios by clicking on the login button. The UH CAS authentication screen then appears and requests your UH account and password:
  
@@ -36,11 +36,12 @@ Once authenticated, you can create a profile that provides a biographical statem
   
 After creating a profile, you will be listed on the looking for group page(lfg):
 
-![](images/directory.png)
+![](images/lfg.png)
+![](images/lfg-submit.png)
 
 Manoa Gaming also provides a Profile Browse page, available to those who can login to the system with their UH account. The Profile Browse page allows you to display all profiles with a given interest:
 
-![](images/filter.png)
+![](images/BrowseProfile.png)
 
 # Installation
 
@@ -303,12 +304,12 @@ Mockups for the following four pages were implemented during M1:
 <img width="200px" src="images/directory.png"/>
 <img width="200px" src="images/filter.png"/>
 
-Milestone 1 was implemented as [BowFolio GitHub Milestone M1](https://github.com/bowfolios/bowfolios/milestone/1)::
+Milestone 1 was implemented as [M1](https://github.com/manoagaming/manoagaming/projects/1)::
 
 ![](images/m1-milestone.png)
 
 
-Milestone 1 consisted of five issues, and progress was managed via the [BowFolio GitHub Project M1](https://github.com/bowfolios/bowfolios/projects/1):
+Milestone 1 consisted of five issues, and progress was managed via the [M1](https://github.com/manoagaming/manoagaming/projects/1):
 
 ![](images/m1-project.png)
 
@@ -324,12 +325,12 @@ The goal of Milestone 2 was to implement the data model: the underlying set of M
  
 Also in this milestone, we implemented a set of mocha tests for the data model classes. These tests make sure we can create, manipulate, and delete the data model documents successfully.  These tests are documented above.
 
-Milestone 2 was implemented as [BowFolio GitHub Milestone M2](https://github.com/bowfolios/bowfolios/milestone/2)::
+Milestone 2 was implemented as [M2](https://github.com/manoagaming/manoagaming/projects/2)::
 
 ![](images/m2-milestone.png)
 
 
-Milestone 2 consisted of two issues, and progress was managed via the [BowFolio GitHub Project M2](https://github.com/bowfolios/bowfolios/projects/2):
+Milestone 2 consisted of two issues, and progress was managed via the [M2](https://github.com/manoagaming/manoagaming/projects/2):
 
 ![](images/m2-project.png)
 
