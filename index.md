@@ -27,7 +27,7 @@ Manoa Gaming is a Meteor application where gamers can meet other gamers to join 
 
 ![](images/landingpage.png)
 
-Anyone with a UH account can login to BowFolios by clicking on the login button. The UH CAS authentication screen then appears and requests your UH account and password:
+Anyone with a UH account can login to Manoa Gaming by clicking on the login button. The UH CAS authentication screen then appears and requests your UH account and password:
  
 ![](images/bowfolios-cas.png)
  
