@@ -160,13 +160,13 @@ This system adopts the following naming conventions:
 
 ## Data model
 
-The Manoa Gaming data model is implemented by three Javascript classes: [ProfileCollection](https://github.com/manoagaming/manoagaming/blob/master/app/imports/api/profile/ProfileCollection.js) and [InterestCollection](https://github.com/manoagaming/manoagaming/blob/master/app/imports/api/interest/InterestCollection.js). Both of these classes encapsulate a MongoDB collection with the same name and export a single variable (Profiles and Interests)that provides access to that collection. 
+The Manoa Gaming data model is implemented by three Javascript classes: [ProfileCollection](https://github.com/manoagaming/manoagaming/blob/master/app/imports/api/profile/ProfileCollection.js), [LFGCollection](https://github.com/manoagaming/manoagaming/blob/master/app/imports/api/lfg/LFGCollection.js), [InterestCollection](https://github.com/manoagaming/manoagaming/blob/master/app/imports/api/interest/InterestCollection.js). All of these classes encapsulate a MongoDB collection with the same name and export a single variable (Profiles, LFG, Interests)that provides access to that collection. 
 
 Any part of the system that manipulates the Manoa Gaming data model imports the Profiles or Interests variable, and invokes methods of that class to get or set data.
 
-There are many common operations on MongoDB collections. To simplify the implementation, the ProfileCollection and InterestCollection classes inherit from the [BaseCollection](https://github.com/manoagaming/manoagaming/blob/master/app/imports/api/base/BaseCollection.js) class.
+There are many common operations on MongoDB collections. To simplify the implementation, the ProfileCollection, LFGCollection, InterestCollection classes inherit from the [BaseCollection](https://github.com/manoagaming/manoagaming/blob/master/app/imports/api/base/BaseCollection.js) class.
 
-The [BaseUtilities](https://github.com/manoagaming/manoagaming/blob/master/app/imports/api/base/BaseUtilities.js) file contains functions that operate across both classes. 
+The [BaseUtilities](https://github.com/manoagaming/manoagaming/blob/master/app/imports/api/base/BaseUtilities.js) file contains functions that operate across all classes. 
 
 Both ProfileCollection and InterestCollection have Mocha unit tests in [ProfileCollection.test.js](https://github.com/manoagaming/manoagaming/blob/master/app/imports/api/profile/ProfileCollection.test.js) and [InterestCollection.test.js](https://github.com/manoagaming/manoagaming/blob/master/app/imports/api/interest/InterestCollection.test.js). See the section below on testing for more details.
 
@@ -184,7 +184,7 @@ For display and navigation among its four pages, the application uses [Flow Rout
 
 Routing is defined in [imports/startup/client/router.js](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/imports/startup/client/router.js).
 
-BowFolios defines the following routes:
+Manoagaming defines the following routes:
 
   * The `/` route goes to the public landing page.
   * The `/directory` route goes to the public directory page.
@@ -198,13 +198,13 @@ For authentication, the application uses the University of Hawaii CAS test serve
 
 When the application is run, the CAS configuration information must be present in a configuration file such as  [config/settings.development.json](https://github.com/ics-software-engineering/meteor-application-template/blob/master/config/settings.development.json). 
 
-Anyone with a UH account can login and use BowFolio to create a portfolio.  A profile document is created for them if none already exists for that username.
+Anyone with a UH account can login and use Manoagaming to create a portfolio.  A profile document is created for them if none already exists for that username.
 
 ## Authorization
 
 The landing and directory pages are public; anyone can access those pages.
 
-The profile and filter pages require authorization: you must be logged in (i.e. authenticated) through the UH test CAS server, and the authenticated username returned by CAS must match the username specified in the URL.  So, for example, only the authenticated user `johnson` can access the pages `http://localhost:3000/johnson/profile` and  `http://localhost:3000/johnson/filter`.
+The profile, lfg, and filter pages require authorization: you must be logged in (i.e. authenticated) through the UH test CAS server, and the authenticated username returned by CAS must match the username specified in the URL.  So, for example, only the authenticated user `johnson` can access the pages `http://localhost:3000/johnson/profile` and  `http://localhost:3000/johnson/filter`.
 
 To prevent people from accessing pages they are not authorized to visit, template-based authorization is used following the recommendations in [Implementing Auth Logic and Permissions](https://kadira.io/academy/meteor-routing-guide/content/implementing-auth-logic-and-permissions). 
 
@@ -222,7 +222,7 @@ Manoa Gaming checks on startup to see if it has an empty database in [initialize
 
 ### ESLint
 
-BowFolios includes a [.eslintrc](https://github.com/manoagaming/manoagaming/blob/master/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
+Manoagaming includes a [.eslintrc](https://github.com/manoagaming/manoagaming/blob/master/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
 
 ```
 meteor npm run lint
@@ -287,7 +287,7 @@ Load the app in a browser to run client tests, or set the TEST_BROWSER_DRIVER en
 
 The development process for Manoa Gaming conformed to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314f17/modules/project-management/) practices. In a nutshell, development consists of a sequence of Milestones. Milestones consist of issues corresponding to 2-3 day tasks. GitHub projects are used to manage the processing of tasks during a milestone.  
 
-The following sections document the development history of BowFolios.
+The following sections document the development history of Manoagaming.
 
 ## Milestone 1: Mockup development
 
@@ -318,11 +318,11 @@ Each issue was implemented in its own branch, and merged into master when comple
 
 ## Milestone 2: Data model development 
 
-This milestone started on Jan 31, 2017 and ended on Feb 2, 2017.
+This milestone started on November 22 , 2017 and ended on December 13, 2017.
 
 The goal of Milestone 2 was to implement the data model: the underlying set of Mongo Collections and the operations upon them that would support the BowFolio application.  We implemented the data model as a set of Javascript classes. The BaseCollection class provides common fields and operations. The ProfileCollection and InterestCollection classes inherit from BaseCollection and provide the persistent data structures useful for BowFolios. 
  
-Also in this milestone, we implemented a set of mocha tests for the data model classes. These tests make sure we can create, manipulate, and delete the data model documents successfully.  These tests are documented above.
+Also in this milestone, we implemented a set of mocha tests for the data model classes. These tests make sure we can create, manipulate, and delete the data model documents successfully. These tests are documented above.
 
 Milestone 2 was implemented as [M2](https://github.com/manoagaming/manoagaming/projects/2)::
 
