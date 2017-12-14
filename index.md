@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Link to Galaxy Deployment](https://galaxy.meteor.com/app/manoagaming1.meteorapp.com)
+* [Link to Website](http://manoagaming1.meteorapp.com/)
 * [About Manoa Gaming](#about-manoa-gaming)
 * [Installation](#installation)
 * [Application design](#application-design)
