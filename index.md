@@ -24,7 +24,7 @@
 
 # About Manoa Gaming 
 
-Manoa Gaming is a Meteor application where gamers can meet other gamers to join together and play their favorite games for the University of Hawaii community. When you come to the site, you are greeted by the following landing page:
+Manoa Gaming is a Meteor application where gamers can meet other gamers to join together and play their favorite games for within the University of Hawaii community. When you come to the site, you are greeted by the following landing page:
 
 ![](images/landingpage.png)
 
@@ -243,9 +243,9 @@ meteor npm run test
 This outputs the results to the console. Here is an example of a successful run, with timestamps removed:
 
 ```
-[~/github/bowfolios/bowfolios/app]-> meteor npm run test
+[~/github/manoagaming/app]-> meteor npm run test
 
-> bowfolios@ test /Users/philipjohnson/github/bowfolios/bowfolios/app
+> manoagaming@ test /Users/philipjohnson/github/manoagaming/app
 > TEST_WATCH=1 meteor test --driver-package meteortesting:mocha
 
 [[[[[ Tests ]]]]]                             
