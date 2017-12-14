@@ -184,7 +184,7 @@ For display and navigation among its four pages, the application uses [Flow Rout
 
 Routing is defined in [imports/startup/client/router.js](https://github.com/ics-software-engineering/meteor-application-template/blob/master/app/imports/startup/client/router.js).
 
-BowFolios defines the following routes:
+Manoagaming defines the following routes:
 
   * The `/` route goes to the public landing page.
   * The `/directory` route goes to the public directory page.
@@ -198,7 +198,7 @@ For authentication, the application uses the University of Hawaii CAS test serve
 
 When the application is run, the CAS configuration information must be present in a configuration file such as  [config/settings.development.json](https://github.com/ics-software-engineering/meteor-application-template/blob/master/config/settings.development.json). 
 
-Anyone with a UH account can login and use BowFolio to create a portfolio.  A profile document is created for them if none already exists for that username.
+Anyone with a UH account can login and use Manoagaming to create a portfolio.  A profile document is created for them if none already exists for that username.
 
 ## Authorization
 
@@ -222,7 +222,7 @@ Manoa Gaming checks on startup to see if it has an empty database in [initialize
 
 ### ESLint
 
-BowFolios includes a [.eslintrc](https://github.com/manoagaming/manoagaming/blob/master/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
+Manoagaming includes a [.eslintrc](https://github.com/manoagaming/manoagaming/blob/master/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
 
 ```
 meteor npm run lint
