@@ -289,6 +289,18 @@ The development process for Manoa Gaming conformed to [Issue Driven Project Mana
 
 The following sections document the development history of BowFolios.
 
+# User Feedback
+
+"I wish this was a real thing! Would be nice to have search or sorting"
+
+"Seems cool. Would use"
+
+"Brah you gonna get sued for that background video. Looks cool though"
+
+"I like the idea for LFGs, needs a little work but I think it could be cool."
+
+"G8 sh8 m8, I r8 8/8"
+
 ## Milestone 1: Mockup development
 
 This milestone started on November 7, 2017 and ended on November 22, 2017.
