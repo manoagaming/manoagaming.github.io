@@ -291,7 +291,7 @@ The following sections document the development history of BowFolios.
 
 ## Milestone 1: Mockup development
 
-This milestone started on December 6, 2016 and ended on January 31, 2017.
+This milestone started on November 7, 2017 and ended on November 22, 2017.
 
 The goal of Milestone 1 was to create a set of HTML pages providing a mockup of the pages in the system. To simplify things, the mockup was developed as a Meteor app. This meant that each page was a template and that FlowRouter was used to implement routing to the pages. 
 
@@ -318,9 +318,9 @@ Each issue was implemented in its own branch, and merged into master when comple
 
 ## Milestone 2: Data model development 
 
-This milestone started on Jan 31, 2017 and ended on Feb 2, 2017.
+This milestone started on November 22, 2017 and ended on December 13, 2017.
 
-The goal of Milestone 2 was to implement the data model: the underlying set of Mongo Collections and the operations upon them that would support the BowFolio application.  We implemented the data model as a set of Javascript classes. The BaseCollection class provides common fields and operations. The ProfileCollection and InterestCollection classes inherit from BaseCollection and provide the persistent data structures useful for BowFolios. 
+The goal of Milestone 2 was to clean up and add more to the mockup pages while implementing more functions to each of the pages. 
  
 Also in this milestone, we implemented a set of mocha tests for the data model classes. These tests make sure we can create, manipulate, and delete the data model documents successfully.  These tests are documented above.
 
